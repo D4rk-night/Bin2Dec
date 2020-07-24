@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<html>
+    <head>
+        <title>Bin2Dec</title>
+        <link href = "index.css" rel = "stylesheet">
+    </head>
+    <body>
+        <div class = "container-fluid" id = "bin2Dec">
+            <div class = "col-xs-5">
+                <div class = "well">
+                    <center><h2> Bin2Dec </h2></center>
+                    <br>
+                    <h3> Binary: <button type = "button" class = "btn btn-default pull-right" onclick = "changeOperation()"><i class = "fas fa-arrows-alt-v"></i></button></h3>
+                    <input type = "text" name = "binary" placeholder = "Binary Number" class = "form-control" id = "binary1">
+                    <h5><p class = "text-danger" id = "warningBin"></p></h5> 
+                    <br>
+                    <h3> Number: </h3>
+                    <input type = "text" name = "num" class = "form-control" id = "num" disabled>
+                    <h5><p class = "text-danger" id = "warningNum"></p></h5>
+                    <br><br>
+                    <button type = "button" class = "btn btn-primary btn-lg" onclick = "bin2Dec()"> Convert </button>
+                    <button type = "button" class = "btn btn-danger btn-lg" onclick = "clear1()"> <i class = "glyphicon glyphicon-trash"></i> Clear </button>
+                    <button type = "button" class = "btn btn-warning btn-lg" onclick = "info()"> <i class = "fas fa-info-circle"></i> Info </button>
+                </div>
+            </div>
+        </div>
+        <script type = "text/javascript" src = "index.js"></script>
+    </body>
+</html>
